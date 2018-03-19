@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Crystal Collector Game</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+</head>
+
+<body>
+
+<div class="containair col-md-12">
+    
+    <div class="row col-md-12">
+        <h1>CRYSTAL COLLECTOR GAME</h1>
+    </div>
+    
+    <div class="row" id="main-part">
+        
+        <div class="col-lg-5 col-md-11 middle" id ="instru">
+            <h3>Instructions</h3>
+            <p>You have a random number as you targetin the Crystal section</p>
+            <p>There are four crystal in crystal section and each crystal has a random one value for a particular game.</p>
+            <p>At the begining of the game you have score of Zero.
+                Each time, when you click the crystal, the value of the crystal you get will be added in your score.
+            </p>
+            <p>Your goal is the match the target value. If you macth the target value, you will win and if you crossed the target value, you will lose the game.</p>
+        </div>
+    
+        <div class="col-lg-5 col-md-11 middle" id="crystal">
+            <h3>Crystals</h3>
+            
+            <div class="row" id="score_counter">
+                <div class="col-lg-6 col-xs-11" id="score-section">
+                    <p id="current-score"> Your Score: </p>
+                </div>
+                <div class="col-lg-5 col-xs-11" id="winlos-sec">
+                    <p id="win">Win: 0</p>
+                    <p id="loss">Loss: 0</p>
+                </div>
+            </div>
+            
+            <div class="row" id="crystal-images">
+                <div class="col-sm-3 crystal">
+                    <img id="crys" src="assets/images/cry1.jpg" alt="crystal_1" height="70" width="100">
+                </div>
+                <div class="col-sm-3 crystal">
+                    <img src="assets/images/cry2.jpg" alt="crystal_2" height="70" width="100">
+                </div>
+                <div class="col-sm-3 crystal">
+                    <img src="assets/images/cry3.jpg" alt="crystal_3" height="70" width="100">
+                </div>
+                <div class="col-sm-3 crystal">
+                    <img src="assets/images/cry4.jpg" alt="crystal_4" height="70" width="100">
+                </div>
+            </div>            
+           
+        </div>
+    </div>
+   
+    <div class="row" id="my-score">
+        <div class= "col-lg-12">
+            <h2>Your score is:</h2>
+        </div>
+        <div class= "col-lg-12">
+            <p id="score">0</p>
+        </div>
+    </div>
+        
+   
+</div>
+
+  
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>

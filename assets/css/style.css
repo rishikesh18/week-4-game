@@ -1,0 +1,64 @@
+body {
+    width: 100%;
+    color: greenyellow;
+    background-image: url("../images/background.jpg");
+}
+
+.containair {
+    padding: 10px;
+    border: 10px solid blueviolet;
+   
+} 
+
+h1 {
+    
+    text-align: center;
+}
+
+#main-part {
+    border: 5px solid wheat;
+}
+
+.middle {
+    border: 3px solid green;
+    margin: 10px;
+}
+
+.score_counter {
+    border: 3px dashed gold;
+}
+#score-section, #winlos-sec {
+    border: 2px solid red;
+    height: 70px;
+    width: 50%
+}
+#score-section {
+    align-self: center;
+}
+
+.crystal-images {
+    padding: 10px 2px 10px 2px;
+    border: 2px solid red;
+}
+
+
+.crystal {
+    padding: 10px 4px 10px 4px;
+   
+    height: 130px;
+    border: greenyellow;
+    
+}
+
+#crys {
+    margin: 10px, 1px, 10px, 1px;
+}
+
+#my-score {
+    text-align: center;
+    border:3px solid blue;
+}
+
+#score {
+    font-size: 50px;
+}
