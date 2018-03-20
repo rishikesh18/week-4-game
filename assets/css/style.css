@@ -1,7 +1,9 @@
 body {
     width: 100%;
     color: greenyellow;
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/background.JPG");
+    line-height: 20px;
+    font-size: 16px;
 }
 
 .containair {
@@ -50,15 +52,47 @@ h1 {
     
 }
 
-#crys {
-    margin: 10px, 1px, 10px, 1px;
-}
+
 
 #my-score {
     text-align: center;
+    padding: 10px;
     border:3px solid blue;
 }
 
 #score {
     font-size: 50px;
+}
+
+h2 {
+    padding: 10px;
+   
+}
+.lost {
+    width: 350px;
+    margin-top: 10px;
+    height:60px;   
+    text-align: center;
+    z-index: 2;   
+    bottom:10px;
+    background-color: red;
+    color: #F0F0F0;
+    font-size: 40px;
+    padding:10px;
+    border-radius: 3px solid grey ;
+   
+}
+
+.won {
+    width: 350px;
+    margin-top: 10px;
+    height:60px;   
+    text-align: center;
+    z-index: 2;   
+    bottom:10px;
+    background-color: green;
+    color: #F0F0F0;
+    font-size: 40px;
+    padding:10px;
+    border-radius: 3px solid grey ;
 }

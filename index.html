@@ -9,8 +9,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- Added a link to Bootstrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ 
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   
 </head>
@@ -20,19 +21,19 @@
 <div class="containair col-md-12">
     
     <div class="row col-md-12">
-        <h1>CRYSTAL COLLECTOR GAME</h1>
+        <h1>CRYSTAL COLLECTOR GAME By Rishikesh</h1>
     </div>
     
     <div class="row" id="main-part">
         
         <div class="col-lg-5 col-md-11 middle" id ="instru">
             <h3>Instructions</h3>
-            <p>You have a random number as you targetin the Crystal section</p>
+            <p>You have a random number as your target in the Crystal section.</p>
             <p>There are four crystal in crystal section and each crystal has a random one value for a particular game.</p>
             <p>At the begining of the game you have score of Zero.
                 Each time, when you click the crystal, the value of the crystal you get will be added in your score.
             </p>
-            <p>Your goal is the match the target value. If you macth the target value, you will win and if you crossed the target value, you will lose the game.</p>
+            <p>Your goal is the match the target value. If you match the target value, you will win and if you crossed the target value, you will lose the game.</p>
         </div>
     
         <div class="col-lg-5 col-md-11 middle" id="crystal">
@@ -40,7 +41,8 @@
             
             <div class="row" id="score_counter">
                 <div class="col-lg-6 col-xs-11" id="score-section">
-                    <p id="current-score"> Your Score: </p>
+                    <p id="target-score"> Target: </p>
+                    <p id="target"></p>
                 </div>
                 <div class="col-lg-5 col-xs-11" id="winlos-sec">
                     <p id="win">Win: 0</p>
@@ -50,23 +52,34 @@
             
             <div class="row" id="crystal-images">
                 <div class="col-sm-3 crystal">
-                    <img id="crys" src="assets/images/cry1.jpg" alt="crystal_1" height="70" width="100">
+                    <button id="crys1">
+                        <img id="cryst1" src="assets/images/cry1.JPG" alt="crystal_1" height="70" width="100">
+                    </button>
                 </div>
                 <div class="col-sm-3 crystal">
-                    <img src="assets/images/cry2.jpg" alt="crystal_2" height="70" width="100">
+                        <button id="crys2">
+                            <img id="cryst2" src="assets/images/cry2.JPG" alt="crystal_1" height="70" width="100">
+                        </button>
                 </div>
                 <div class="col-sm-3 crystal">
-                    <img src="assets/images/cry3.jpg" alt="crystal_3" height="70" width="100">
+                        <button id="crys3">
+                            <img id="cryst3" src="assets/images/cry3.JPG" alt="crystal_1" height="70" width="100">
+                        </button>
                 </div>
                 <div class="col-sm-3 crystal">
-                    <img src="assets/images/cry4.jpg" alt="crystal_4" height="70" width="100">
+                        <button id="crys4">
+                            <img id="cryst4" src="assets/images/cry4.JPG" alt="crystal_1" height="70" width="100">
+                        </button>
                 </div>
             </div>            
            
         </div>
     </div>
-   
+    
+    
     <div class="row" id="my-score">
+            <div class="col-md-3 col-md-offset-4 won" style="display:none">You Win!</div>
+            <div class="col-md-3 col-md-offset-4 lost" style="display:none">You Lose!</div>
         <div class= "col-lg-12">
             <h2>Your score is:</h2>
         </div>
