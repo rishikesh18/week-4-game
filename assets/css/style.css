@@ -68,7 +68,12 @@ h2 {
     padding: 10px;
    
 }
+
+#sco {
+    padding-top: 65px;
+}
 .lost {
+    position: absolute;
     width: 350px;
     margin-top: 10px;
     height:60px;   
@@ -84,6 +89,7 @@ h2 {
 }
 
 .won {
+    position: absolute;
     width: 350px;
     margin-top: 10px;
     height:60px;   
