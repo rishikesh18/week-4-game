@@ -12,6 +12,10 @@ body {
    
 } 
 
+#whole {
+    float: none;
+}
+
 h1 {
     
     text-align: center;
@@ -19,6 +23,7 @@ h1 {
 
 .mainpart {
     border: 5px solid wheat;
+    margin: 5px;
 }
 
 .middle {
@@ -60,7 +65,7 @@ h1 {
     min-height: 200px;
     text-align: center;
     border:3px solid blue;
-    margin: 10px;
+    margin: 5px;
 }
 
 #score {
@@ -71,7 +76,7 @@ h1 {
 .lost {
     position: absolute;
     width: 350px;
-    height:60px;   
+    height:70px;   
     text-align: center;
     z-index: 2;   
     bottom:30px;
@@ -86,7 +91,7 @@ h1 {
 .won {
     position: absolute;
     width: 350px;
-    height:60px;   
+    height:70px;   
     text-align: center;
     z-index: 2;   
     bottom:30px;
