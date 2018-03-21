@@ -12,7 +12,18 @@ function initializeValue() {
      num1=Math.floor(Math.random()*((15-1)+1) + 1);
      num2=Math.floor(Math.random()*((15-1)+1) + 1);
      num3=Math.floor(Math.random()*((15-1)+1) + 1);
-     num4=Math.floor(Math.random()*((15-1)+1) + 1);          
+     num4=Math.floor(Math.random()*((15-1)+1) + 1);
+
+function makingOdd()  {
+       if((num1 %2 === 0) && (num2 %2 === 0) &&( num3 %2 === 0) &&( num4 %2 === 0)){//generated number is even
+        if(num4 == MAX_VALUE){
+          num4  = num4 -1 ;
+        }
+        else{
+          num4  = num4 +1 ;
+        }
+    }
+}       
      $("#target").text(random);
      $("#score").text(userTotal);
      
